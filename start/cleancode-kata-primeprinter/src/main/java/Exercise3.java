@@ -11,15 +11,19 @@ public class Exercise3 {
         double result;
 
         switch (type) {
-            case 1: // NotRegistered
+            case 1:
+                // NotRegistered
                 return amount;
-            case 2: // SimpleCustomer
+            case 2:
+                // SimpleCustomer
                 result = amount - 0.1 * amount;
                 return result - discount * result;
-            case 3: // ValuableCustomer
+            case 3:
+                // ValuableCustomer
                 result = 0.7 * amount;
                 return result - discount * result;
-            case 4: // MostValuableCustomer
+            case 4:
+                // MostValuableCustomer
                 result = amount - 0.5 * amount;
                 return result - discount * result;
             default:
